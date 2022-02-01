@@ -61,7 +61,7 @@ function Cart({
 
 	// VARIANTS WIDTH MENU
 	let container = {
-		initial: { opacity: 0, width: 0, y: -100 },
+		initial: { opacity: 0, width: 0, y: -10 },
 		animate: {
 			duration: 0.1,
 			opacity: 1,

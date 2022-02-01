@@ -23,8 +23,8 @@ function Layout({ children }) {
 	const [message, setMessage] = useState("")
 	const [error, setError] = useState("")
 	const [hideCookieConsent, setHideCookieConsent] = useState(false)
-	const [widthSidebar, setWidthSidebar] = useState("22%")
-	const [widthCart, setWidthCart] = useState("40%")
+	const [widthSidebar, setWidthSidebar] = useState("50%")
+	const [widthCart, setWidthCart] = useState("50%")
 
 	// -----------------------------     COOKIE CONSENT   ------------------------------------------
 	useEffect(() => {
@@ -105,6 +105,11 @@ function Layout({ children }) {
 			})
 	}, [login, id])
 	// ---------------------------------  handle Width & resize ------------------------------------------------------
+	useEffect(() => {
+		setWidthSidebar(getWidth().sidebarWidth)
+		setWidthCart(getWidth().cartWidth)
+	}, [])
+
 	useEffect(() => {
 		function handleResize() {
 			setWidthSidebar(getWidth().sidebarWidth)

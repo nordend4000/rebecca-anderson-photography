@@ -35,7 +35,7 @@ body,
 	display: flex;
 	justify-content: center;
 	background-color: var(--main-darkcolor);
-	padding-top: 70px;
+	padding: 30px 2px;
 }
 .login-message {
 	color: var(--message-text);
