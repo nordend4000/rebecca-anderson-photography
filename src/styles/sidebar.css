@@ -1,0 +1,70 @@
+.sidebar {
+	background-color: var(--main-darkcolor);
+	width: 28%;
+	min-height: 100vh;
+	transition: ease-in-out 2s;
+	position: absolute;
+	left: 0;
+	top: 12%;
+	padding-top: 15px;
+	display: flex;
+	flex-direction: column;
+	z-index: 200;
+}
+.nav-links {
+	margin: 15px 20px;
+	text-decoration: none;
+	color: var(--main-lightcolor);
+	font-size: 1.6em;
+	font-family: "DancingScript";
+	letter-spacing: 3.5px;
+	font-weight: bold;
+}
+.nav-links:hover {
+	color: var(--secondary-lightcolor);
+}
+.sidebar-link {
+	display: flex;
+	align-items: center;
+}
+.sub-links {
+	display: flex;
+	flex-direction: column;
+	margin-left: 30%;
+	margin-top: -2px;
+	padding-bottom: 8px;
+	font-size: 1.1em;
+	font-weight: lighter;
+}
+.sidebar-chevron {
+	font-size: 1em;
+}
+.sidebar-chevron:hover {
+	cursor: pointer;
+	color: var(--secondary-lightcolor);
+}
+/****************************************************************************************************************
+**********************************************  MEDIA QUERIES  **************************************************
+*******************************************************************************************************************/
+@media only screen and (max-width: 600px) {
+	.sidebar {
+		width: 70%;
+		top: 10%;
+	}
+	.nav-links {
+		margin: 12px 18px;
+		font-size: 1.4em;
+	}
+	.nav-links:hover {
+		color: var(--secondary-lightcolor);
+	}
+	.sidebar-link {
+		display: flex;
+		align-items: center;
+	}
+	.sub-links {
+		margin-left: 20%;
+		margin-top: -2px;
+		padding-bottom: 8px;
+	}
+}

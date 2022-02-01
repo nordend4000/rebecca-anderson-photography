@@ -1,0 +1,161 @@
+@font-face {
+	font-family: "DancingScript";
+	src: url("../ressources/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+	font-family: "WindSong-Medium";
+	src: url("../ressources/WindSong-Medium.ttf");
+}
+@font-face {
+	font-family: "WindSong-Regular";
+	src: url("../ressources/WindSong-Regular.ttf");
+}
+:root {
+	--main-darkcolor: rgb(32, 32, 32);
+	--main-lightcolor: rgb(177, 175, 165);
+	--main-darktransparent: rgba(32, 32, 32, 0.461);
+	--main-lighttransparent: rgba(177, 175, 165, 0.461);
+	--secondary-darkcolor: rgb(81, 106, 135);
+	--secondary-lightcolor: rgb(137, 175, 222);
+	--secondary-darktransparent: rgb(81, 106, 135, 0.461);
+	--secondary-lighttransparent: rgb(137, 175, 222, 0.461);
+	--message-bg: rgb(193, 232, 190);
+	--message-text: rgb(50, 140, 93);
+	--error-bg: rgb(232, 194, 190);
+	--error-text: rgb(140, 51, 50);
+}
+
+html,
+body,
+.root {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100vw;
+	color: var(--main-lightcolor);
+	background-color: var(--main-darkcolor);
+	overflow-x: hidden;
+}
+
+.layout {
+	background-color: var(--main-darkcolor);
+}
+.login-message-container {
+	display: flex;
+	justify-content: center;
+	background-color: var(--main-darkcolor);
+	padding-top: 70px;
+}
+.login-message {
+	color: var(--message-text);
+	background-color: var(--message-bg);
+	border: 1px solid var(--message-text);
+	border-radius: 20px;
+	padding: 12px 30px;
+	width: 50%;
+}
+.error {
+	color: var(--error-text);
+	background-color: var(--error-bg);
+	border: 1px solid var(--error-text);
+}
+.user {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	font-size: 0.7em;
+	position: absolute;
+	right: 0;
+	top: 8%;
+	padding-top: 1px;
+	padding-right: 2%;
+	color: var(--secondary-lightcolor);
+	background-color: var(--main-darkcolor);
+}
+.capitalized {
+	text-transform: capitalize;
+}
+.stripe-message {
+	background-color: var(--main-darkcolor);
+	padding: 15px;
+	font-size: 1.2em;
+	border: 1px solid var(--secondary-lightcolor);
+	margin-left: 10%;
+}
+.stripe-message-container {
+	background-color: var(--main-darkcolor);
+	padding-top: 30px;
+}
+
+/* loading animation */
+.blackbox {
+	position: absolute;
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	background-color: var(--main-darkcolor);
+}
+.anim-svg {
+	z-index: 50;
+	display: flex;
+	position: absolute;
+}
+.pattern {
+	color: var(--main-lightcolor);
+}
+.rect {
+	fill: var(--secondary-darkcolor);
+	width: 100vw;
+	height: 100vh;
+}
+.motion-rect {
+	fill: var(--secondary-lightcolor);
+	width: 100vw;
+	height: 100vh;
+	color: var(--main-lightcolor);
+}
+.text-anim {
+	font-size: 3.5em;
+	font-family: "DancingScript";
+	letter-spacing: 5px;
+}
+/****************************************************************************************************************
+**********************************************  MEDIA QUERIES  **************************************************
+*******************************************************************************************************************/
+@media only screen and (max-width: 600px) {
+	.login-message-container {
+		padding-top: 50px;
+	}
+	.login-message {
+		font-size: 0.8em;
+		padding: 12px 20px;
+		width: 80%;
+	}
+	.error {
+		color: var(--error-text);
+		background-color: var(--error-bg);
+		border: 1px solid var(--error-text);
+	}
+	.user {
+		font-size: 0.55em;
+		position: absolute;
+		right: 0;
+		top: 7%;
+		padding-top: 0;
+		padding-right: 1%;
+	}
+	.capitalized {
+		text-transform: capitalize;
+	}
+	.stripe-message {
+		font-size: 0.8em;
+		width: 80%;
+		margin-left: 10%;
+	}
+	.stripe-message-container {
+		padding-top: 30px;
+	}
+}

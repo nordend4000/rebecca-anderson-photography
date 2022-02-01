@@ -1,0 +1,821 @@
+.page-container {
+	background-color: var(--main-darkcolor);
+	padding: 5px 0px;
+	min-height: 60vh;
+	width: auto;
+}
+.page-container-flex {
+	background-color: var(--main-darkcolor);
+	padding: 5px 0px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.page-container-login {
+	background-color: var(--main-darkcolor);
+	padding: 10px 0px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.page-line {
+	width: 90%;
+	margin-left: 5%;
+	border-top: 2px solid var(--secondary-darkcolor);
+	border-radius: 2px;
+	padding-bottom: 40px;
+}
+.grab:hover {
+	cursor: grab;
+}
+.nav-link-container {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	background-color: var(--main-darkcolor);
+}
+.col {
+	flex-direction: column;
+	text-align: center;
+	line-height: 35px;
+}
+.nav-link-icon {
+	color: var(--secondary-lightcolor);
+	padding-right: 15px;
+}
+.nav-link-icon:hover {
+	color: var(--main-lightcolor);
+}
+.nav-link {
+	text-decoration: none;
+	color: var(--secondary-lightcolor);
+	letter-spacing: 1.2px;
+	transition: all 0.5s ease-out;
+}
+.nav-link:hover {
+	text-decoration: none;
+	color: var(--main-lightcolor);
+	transition: all 0.5s ease-out;
+}
+.nav-link-2 {
+	text-decoration: none;
+	color: var(--main-lightcolor);
+	border: 1px solid var(--main-lightcolor);
+	border-radius: 20px;
+	padding: 5px 12px;
+	letter-spacing: 1.2px;
+	transition: all 0.7s ease-out;
+}
+.nav-link-2:hover {
+	color: white;
+	border: 1px solid white;
+	background-color: var(--secondary-darkcolor);
+	transition: all 0.7s ease-out;
+}
+/* ---------------------   HOME PAGE   -------------------*/
+.home-title-contener {
+	display: flex;
+	justify-content: center;
+}
+.home-title {
+	color: var(--main-lightcolor);
+	font-size: 2.2em;
+	font-family: "DancingScript";
+	letter-spacing: 5px;
+	font-weight: bold;
+	border: 2px solid var(--main-lightcolor);
+	box-shadow: 2px 2px 5px var(--secondary-lightcolor);
+	border-radius: 30px;
+	padding: 10px 30px;
+	text-decoration: none;
+	transition: all 0.7s ease-out;
+	text-align: center;
+}
+.home-title:hover {
+	color: white;
+	cursor: pointer;
+	border: 2px solid var(--secondary-lightcolor);
+	box-shadow: 0px 0px 0px var(--main-darkcolor);
+	background-color: var(--secondary-darkcolor);
+	transition: all 0.4s ease-in;
+}
+.home-galleries-contener {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 30px 0px;
+}
+.home-galleries-items {
+	padding: 10px;
+	width: 19%;
+	text-decoration: none;
+}
+.home-galleries-title {
+	color: var(--main-lightcolor);
+	letter-spacing: 3px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.home-galleries-title:hover {
+	color: var(--secondary-lightcolor);
+}
+.play-container {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0px;
+	font-size: 2em;
+}
+.play-container-icon {
+	margin: 10px;
+}
+.play-container-icon:hover {
+	margin: 10px;
+	color: var(--secondary-lightcolor);
+	cursor: pointer;
+}
+/* ---------------------   CATEGORIE PAGE   -------------------*/
+.hide {
+	display: none;
+}
+.show {
+	/*visibility: visible;*/
+	display: block;
+}
+.chevron {
+	display: flex;
+	justify-content: space-between;
+}
+.chevron-left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	position: relative;
+	top: 25vh;
+	left: 15px;
+	font-size: 2em;
+}
+.chevron-right {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	align-items: baseline;
+	position: relative;
+	top: 25vh;
+	right: 15px;
+	font-size: 2em;
+}
+.chevron-left:hover,
+.chevron-right:hover {
+	cursor: pointer;
+	color: white;
+}
+.categorie-product-name {
+	color: white;
+	font-size: 1.7em;
+	font-family: "DancingScript";
+	text-align: center;
+	margin: 20px 20px;
+}
+.categorie-title {
+	color: var(--secondary-lightcolor);
+	font-size: 2.2em;
+	font-family: "DancingScript";
+	letter-spacing: 5px;
+	font-weight: bold;
+	padding-bottom: 40px;
+	text-transform: capitalize;
+	text-align: center;
+}
+.categorie-description {
+	padding: 10px 60px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.categorie-location {
+	color: var(--secondary-lightcolor);
+}
+.categorie-location-icon {
+	color: var(--secondary-darkcolor);
+	margin-right: 10px;
+	font-size: 1.6em;
+}
+.categorie-link-icon {
+	padding: 0px 40px;
+	text-decoration: none;
+	color: var(--secondary-lightcolor);
+	position: relative;
+	display: inline-block;
+	font-size: 1.4em;
+	text-align: center;
+}
+.categorie-link-icon:hover {
+	cursor: pointer;
+	color: var(--main-lightcolor);
+}
+.categorie-link-tooltip {
+	font-size: 0.6em;
+	visibility: hidden;
+	width: 100px;
+	top: 100%;
+	left: 50%;
+	margin-left: -50px;
+	background-color: var(--main-lightcolor);
+	color: var(--main-darkcolor);
+	text-align: center;
+	padding: 6px;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+}
+.categorie-link-icon:hover .categorie-link-tooltip {
+	visibility: visible;
+}
+.categorie-thumbnails {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 20px 0px;
+}
+.thumbnails {
+	height: auto;
+	width: auto;
+	max-width: 40%;
+	max-height: 100px;
+	margin: 10px;
+}
+.active-thumbnails {
+	opacity: 1;
+	border: 1px solid white;
+}
+.unactive-thumbnails {
+	opacity: 0.5;
+	border: none;
+}
+.thumbnails:hover {
+	cursor: pointer;
+}
+.slideshow {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+}
+.slideshow-image-contener {
+	display: flex;
+	justify-content: center;
+}
+.slideshow-image {
+	height: auto;
+	width: auto;
+	max-width: 90%;
+	max-height: 65vh;
+	border: 1px solid var(--main-lightcolor);
+	border-radius: 4px;
+}
+.marginbottom {
+	margin-bottom: 30px;
+}
+/* ---------------------  Product PAGE   -------------------*/
+.product-image {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	max-height: 85vh;
+}
+.product-type-data {
+	/*color: var(--secondary-darkcolor);*/
+	color: var(--secondary-lightcolor);
+	letter-spacing: 1.2px;
+	line-height: 30px;
+}
+.product-type {
+	color: var(--main-lightcolor);
+	margin-right: 10px;
+}
+/* ---------------------   LOGIN PAGE   -------------------*/
+.login-input-group {
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+}
+.login-title {
+	color: var(--secondary-lightcolor);
+	font-size: 2.2em;
+	font-family: "DancingScript";
+	letter-spacing: 5px;
+	font-weight: bold;
+	border: 2px solid var(--secondary-lightcolor);
+	border-radius: 30px;
+	padding: 10px 30px;
+	text-decoration: none;
+	transition: all 0.7s ease-out;
+	text-align: center;
+}
+.login-input {
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 30px;
+	border: none;
+}
+.login-btn {
+	padding: 10px;
+	margin: 20px;
+	border-radius: 30px;
+	border: none;
+	width: 50%;
+	margin-left: 25%;
+	color: white;
+	background-color: var(--secondary-darkcolor);
+	border: 1px solid white;
+	transition: all 0.7s ease-in;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 1.8px;
+	font-family: "DancingScript";
+}
+.login-btn:hover {
+	cursor: pointer;
+	border: 1px solid var(--secondary-lightcolor);
+	color: var(--secondary-lightcolor);
+	background-color: var(--main-darkcolor);
+	transition: all 0.4s ease-in;
+}
+.forgot-password {
+	text-align: center;
+	background-color: var(--main-darkcolor);
+	color: var(--secondary-darkcolor);
+}
+.forgot-password:hover {
+	color: var(--secondary-lightcolor);
+	cursor: pointer;
+}
+.input-forgot-container {
+	background-color: var(--main-darkcolor);
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	padding: 20px;
+}
+.input-forgot {
+	width: 30%;
+	margin: 10px;
+	margin-left: 35%;
+	text-align: center;
+}
+.input-forgot-btn {
+	width: 15%;
+	margin-left: 42.5%;
+}
+/* ---------------------   CONTACT PAGE   -------------------*/
+.contact-col {
+	display: flex;
+	flex-direction: column;
+	margin-left: 25%;
+}
+.contact-label {
+	margin: 20px 0px;
+}
+.contact-input {
+	height: 25px;
+}
+.contact-textarea {
+	height: 50px;
+}
+.contact-p {
+	padding: 0px 60px;
+}
+.admin-container {
+	display: flex;
+	justify-content: center;
+}
+/* ---------------------  ADMIN PAGE   -------------------*/
+.admin {
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 15px;
+	padding: 20px;
+	text-decoration: none;
+	margin: 20px;
+	color: white;
+	background-color: var(--secondary-darkcolor);
+}
+.admin:hover {
+	border: 1px solid var(--secondary-lightcolor);
+	cursor: pointer;
+	color: var(--secondary-lightcolor);
+	background-color: var(--main-darkcolor);
+}
+.admin-textarea {
+	height: 100px;
+}
+.admin-subtitle {
+	text-align: center;
+	border: 1px solid var(--secondary-lightcolor);
+	border-radius: 15px;
+	padding: 20px;
+	text-decoration: none;
+	margin: 20px;
+	color: var(--secondary-lightcolor);
+	background-color: var(--main-darkcolor);
+	font-size: 1.6em;
+}
+.admin-active {
+	background-color: var(--main-darkcolor);
+}
+.admin-edit-order {
+	margin-top: 15px;
+	color: var(--secondary-lightcolor);
+	border: 1px solid var(--secondary-lightcolor);
+	border-radius: 10px;
+	padding: 2px;
+	font-size: 0.8em;
+}
+.admin-edit-order:hover {
+	color: white;
+	border: 1px solid white;
+	cursor: pointer;
+}
+.admin-p {
+	margin-left: 60px;
+	letter-spacing: 1.4px;
+}
+.admin-image {
+	width: 20%;
+	margin-left: 40%;
+}
+.bordered {
+	border: 1px solid var(--secondary-darkcolor);
+	border-radius: 20px;
+	margin: 40px 10px;
+	padding: 20px;
+	text-align: center;
+}
+/* ---------------------   ABOUT PAGE   -------------------*/
+.about-container {
+	display: flex;
+	justify-content: center;
+}
+.about-img-container {
+	display: flex;
+	justify-content: center;
+	width: 20%;
+}
+.about-txt-container {
+	width: 80%;
+	padding: 0px 30px;
+	letter-spacing: 1.2px;
+	line-height: 30px;
+}
+.about-image {
+	margin-left: 10%;
+	border: 1px solid var(--main-lightcolor);
+	border-radius: 8px;
+	height: 200px;
+}
+.link-about {
+	text-decoration: none;
+	color: var(--secondary-darkcolor);
+}
+.link-about:hover {
+	color: var(--secondary-lightcolor);
+}
+.tnc-title {
+	text-align: left;
+	color: var(--secondary-lightcolor);
+	font-size: 2.2em;
+	font-family: "DancingScript";
+	letter-spacing: 5px;
+	font-weight: bold;
+	padding-top: 35px;
+	padding-bottom: 2px;
+	text-transform: capitalize;
+}
+.sending-email {
+	display: flex;
+	justify-content: center;
+}
+/****************************************************************************************************************
+**********************************************  MEDIA QUERIES  **************************************************
+*******************************************************************************************************************/
+@media only screen and (max-width: 600px) {
+	.page-container {
+		padding: 5px 0px;
+		min-height: 60vh;
+	}
+	.page-container-flex {
+		padding: 5px 0px;
+	}
+	.page-container-login {
+		background-color: var(--main-darkcolor);
+		display: block;
+		padding: 50px;
+		padding-bottom: 30px;
+	}
+	.page-container-login-half {
+		padding-bottom: 30px;
+	}
+	.nav-link-container {
+		padding: 50px 10px;
+	}
+	.col {
+		flex-direction: column;
+		text-align: center;
+		line-height: 35px;
+	}
+	.nav-link-icon {
+		padding-right: 4px;
+	}
+	.nav-link {
+		letter-spacing: 0.6px;
+		text-align: center;
+		padding: 0px 8px;
+	}
+	.nav-link-2 {
+		padding: 5px 12px;
+	}
+	/* ---------------------   HOME PAGE   -------------------*/
+	.home-title {
+		font-size: 1em;
+		letter-spacing: 4px;
+		font-weight: lighter;
+		border: 1px solid var(--main-lightcolor);
+		box-shadow: 1px 2px 4px var(--secondary-lightcolor);
+		padding: 8px 11px;
+	}
+	.home-galleries-contener {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 30px 0px;
+	}
+	.home-galleries-title {
+		letter-spacing: 2.2px;
+		text-align: center;
+		padding-bottom: 15px;
+	}
+	.play-container {
+		padding: 10px 0px;
+		font-size: 2em;
+	}
+	/* ---------------------   CATEGORIE PAGE   -------------------*/
+	.chevron-left {
+		position: relative;
+		top: -50px;
+		left: 8px;
+		font-size: 1.8em;
+	}
+	.chevron-right {
+		position: relative;
+		position: relative;
+		top: -50px;
+		right: 8px;
+		font-size: 1.8em;
+	}
+	.categorie-product-name {
+		font-size: 1.5em;
+	}
+	.categorie-title {
+		font-size: 2em;
+		letter-spacing: 5px;
+		font-weight: bold;
+		padding-bottom: 30px;
+		text-transform: capitalize;
+	}
+	.categorie-description {
+		padding: 2px;
+		letter-spacing: 1px;
+		font-size: 1em;
+	}
+	.categorie-location {
+		font-size: 0.8em;
+	}
+	.categorie-location-icon {
+		padding-right: 3px;
+		padding-left: 2px;
+		font-size: 1.2em;
+	}
+	.categorie-link-icon {
+		padding: 0px 20px;
+		text-decoration: none;
+		color: var(--secondary-lightcolor);
+		position: relative;
+		display: inline-block;
+		font-size: 1.2em;
+		text-align: center;
+	}
+	.categorie-link-tooltip {
+		font-size: 0.6em;
+		visibility: hidden;
+		top: 100%;
+		left: 50%;
+		margin-left: -50px;
+		padding: 6px;
+		border-radius: 6px;
+		position: absolute;
+		z-index: 1;
+	}
+	.categorie-thumbnails {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 20px 0px;
+	}
+	.thumbnails {
+		height: auto;
+		width: auto;
+		max-width: 90%;
+		max-height: 100px;
+		margin: 10px;
+	}
+	.active-thumbnails {
+		opacity: 1;
+		border: 1px solid white;
+	}
+	.slideshow {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.slideshow-image-contener {
+		display: flex;
+		justify-content: center;
+	}
+	.slideshow-image {
+		max-width: 100%;
+		max-height: 80vh;
+		border: 1px solid var(--main-lightcolor);
+		border-radius: 4px;
+	}
+	.marginbottom {
+		margin-bottom: 30px;
+	}
+	/* ---------------------  Product PAGE   -------------------*/
+	.product-image {
+		height: auto;
+		width: auto;
+		max-width: 100%;
+		max-height: 85vh;
+	}
+	.product-type-data {
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-size: 0.8em;
+		padding: 0px 3px;
+	}
+	.product-type {
+		margin-right: 2px;
+	}
+	/* ---------------------   LOGIN PAGE   -------------------*/
+	.login-input-group {
+		display: flex;
+		flex-direction: column;
+		padding-top: 10px;
+		min-width: 30%;
+	}
+	.login-title {
+		margin: 30px 10px;
+		font-size: 1.3em;
+		letter-spacing: 3px;
+		border: 2px solid var(--secondary-lightcolor);
+		padding: 8px 20px;
+		text-decoration: none;
+		transition: all 0.7s ease-out;
+		text-align: center;
+	}
+	.login-input {
+		margin-bottom: 10px;
+		border-radius: 30px;
+		border: none;
+		padding: 10px 20px;
+	}
+	.login-btn {
+		padding: 10px;
+		width: 50%;
+		margin-left: 25%;
+		font-size: 1.1em;
+		letter-spacing: 1.8px;
+	}
+
+	.input-forgot-container {
+		background-color: var(--main-darkcolor);
+		display: flex;
+		flex-direction: column;
+
+		justify-content: center;
+		padding: 20px;
+	}
+	.input-forgot {
+		width: 80%;
+		margin-left: 10%;
+		text-align: center;
+	}
+	.input-forgot-btn {
+		width: 70%;
+		margin-left: 15%;
+	}
+	/* ---------------------   CONATCT PAGE   -------------------*/
+	.contact-col {
+		display: flex;
+		flex-direction: column;
+		margin-left: 25%;
+	}
+	.contact-label {
+		margin: 20px 0px;
+	}
+	.contact-input {
+		height: 25px;
+	}
+	.contact-textarea {
+		height: 50px;
+	}
+	.contact-p {
+		padding: 0px 60px;
+	}
+	/* ---------------------  ADMIN PAGE   -------------------*/
+	.admin-container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	.admin {
+		text-align: center;
+		border: 1px solid white;
+		border-radius: 15px;
+		padding: 20px;
+		text-decoration: none;
+		margin: 20px;
+		color: white;
+		background-color: var(--secondary-darkcolor);
+	}
+	.admin:hover {
+		border: 1px solid var(--secondary-lightcolor);
+		cursor: pointer;
+		color: var(--secondary-lightcolor);
+		background-color: var(--main-darkcolor);
+	}
+	.admin-textarea {
+		height: 100px;
+	}
+	.admin-subtitle {
+		text-align: center;
+		border: 1px solid var(--secondary-lightcolor);
+		border-radius: 15px;
+		padding: 20px;
+		text-decoration: none;
+		margin: 20px;
+		color: var(--secondary-lightcolor);
+		background-color: var(--main-darkcolor);
+		font-size: 1.6em;
+	}
+	.admin-active {
+		background-color: var(--main-darkcolor);
+	}
+	.admin-edit-order {
+		margin-top: 15px;
+		color: var(--secondary-lightcolor);
+		border: 1px solid var(--secondary-lightcolor);
+		border-radius: 10px;
+		padding: 2px;
+		font-size: 0.8em;
+	}
+	.admin-edit-order:hover {
+		color: white;
+		border: 1px solid white;
+		cursor: pointer;
+	}
+	.admin-p {
+		margin-left: 60px;
+		letter-spacing: 1.4px;
+	}
+	.admin-image {
+		width: 20%;
+		margin-left: 40%;
+	}
+	.bordered {
+		border: 1px solid var(--secondary-darkcolor);
+		border-radius: 20px;
+		margin: 40px 10px;
+		padding: 20px;
+		text-align: center;
+	}
+	/* ---------------------   ABOUT PAGE   -------------------*/
+	.about-container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.about-img-container {
+		display: flex;
+		justify-content: center;
+		width: 20%;
+		margin-left: 40%;
+		margin-bottom: 30px;
+	}
+	.tnc-title {
+		font-size: 1.4em;
+	}
+}

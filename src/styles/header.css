@@ -1,0 +1,127 @@
+header {
+	width: 100vw;
+	height: 10vh;
+	background-color: var(--main-darkcolor);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 1% 0px;
+}
+.header-title {
+	margin-top: -1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 5%;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.header-menu-icon {
+	padding: 10px;
+	font-size: 26px;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: var(--secondary-darkcolor);
+}
+.header-name {
+	font-size: 2.6em;
+	font-family: "WindSong-Medium";
+	letter-spacing: 4px;
+	text-align: center;
+}
+.header-subtitle {
+	font-size: 0.6em;
+	font-family: "WindSong-Regular";
+	margin-left: 30px;
+	letter-spacing: 4px;
+}
+.header-cart {
+	padding: 10px;
+	font-size: 22px;
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	color: var(--secondary-darkcolor);
+}
+.header-menu-icon:hover,
+.header-cart:hover {
+	cursor: pointer;
+	color: var(--secondary-lightcolor);
+}
+/****************************************************************************************************************
+**********************************************  MEDIA QUERIES  **************************************************
+*******************************************************************************************************************/
+@media only screen and (max-width: 1180px) {
+	.header-name {
+		font-size: 2em;
+		text-align: center;
+		letter-spacing: 4px;
+	}
+	.header-subtitle {
+		font-size: 0.6em;
+		margin-left: 20px;
+		letter-spacing: 4px;
+	}
+}
+/**
+/****************************************************************************************************************
+**********************************************  MEDIA QUERIES  **************************************************
+*******************************************************************************************************************/
+@media only screen and (max-width: 960px) {
+	.header-name {
+		font-size: 1.6em;
+		text-align: center;
+		letter-spacing: 4px;
+	}
+	.header-subtitle {
+		font-size: 0.6em;
+		margin-left: 20px;
+		letter-spacing: 4px;
+	}
+	.header-menu-icon {
+		padding: 8px;
+		font-size: 25px;
+		position: absolute;
+		top: 5px;
+		left: 10px;
+	}
+	.header-cart {
+		padding: 6px;
+		font-size: 21px;
+		position: absolute;
+		top: 5px;
+		right: 10px;
+	}
+}
+/****************************************************************************************************************
+**********************************************  MEDIA QUERIES  **************************************************
+*******************************************************************************************************************/
+@media only screen and (max-width: 600px) {
+	.header-menu-icon {
+		padding: 6px;
+		font-size: 24px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.header-name {
+		font-size: 1.1em;
+		text-align: center;
+		letter-spacing: 4px;
+	}
+	.header-subtitle {
+		font-size: 0.6em;
+		margin-left: 15px;
+		letter-spacing: 4px;
+	}
+	.header-cart {
+		padding: 6px;
+		font-size: 20px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+}

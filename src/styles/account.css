@@ -1,0 +1,215 @@
+.account-title {
+	color: var(--secondary-lightcolor);
+	font-size: 2.2em;
+	font-family: "DancingScript";
+	letter-spacing: 5px;
+	font-weight: bold;
+	padding-bottom: 40px;
+	text-transform: capitalize;
+	text-align: center;
+}
+.account-info-container-row {
+	display: flex;
+	justify-content: space-around;
+	padding: 30px;
+}
+.account-info-container-col {
+	display: flex;
+	flex-direction: column;
+}
+.account-order-container-center {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.account-order {
+	padding: 20px;
+}
+.account-data {
+	line-height: 26px;
+	letter-spacing: 2px;
+	font-size: 1.2em;
+}
+.account-label {
+	padding-right: 20px;
+	letter-spacing: 2px;
+	color: var(--secondary-darkcolor);
+	line-height: 30px;
+	font-weight: 500;
+	font-size: 1em;
+}
+.account-edit-icon {
+	padding-right: 15px;
+}
+.account-edit {
+	letter-spacing: 2px;
+	margin: 30px 0px;
+}
+.account-edit:hover {
+	color: var(--secondary-lightcolor);
+	cursor: pointer;
+}
+.order-title {
+	color: var(--secondary-darkcolor);
+	font-size: 1.9em;
+	font-family: "DancingScript";
+	letter-spacing: 2px;
+	margin-top: 30px;
+}
+.grid-order {
+	display: grid;
+	grid-template-columns: 10% 10% 10% 10% auto 10% 10%;
+	grid-template-rows: 70px;
+
+	padding: 10px;
+	padding-top: 40px;
+}
+.grid-order-item {
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.05em;
+	border: 1px solid var(--secondary-darkcolor);
+	padding: 10px;
+}
+.grid-order-item-label {
+	color: var(--secondary-darkcolor);
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.05em;
+	border: 1px solid var(--secondary-darkcolor);
+	padding: 10px;
+}
+.no-order {
+	border: 1px solid var(--secondary-darkcolor);
+	padding: 10px;
+	margin: 10px;
+}
+.disconnect-container {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 30px;
+}
+.disconnect {
+	padding: 10px;
+	border: 1px solid var(--main-lightcolor);
+	border-radius: 10px;
+	color: var(--main-lightcolor);
+	background-color: var(--secondary-darkcolor);
+}
+.disconnect:hover {
+	border: 1px solid var(--secondary-lightcolor);
+	color: var(--secondary-lightcolor);
+	cursor: pointer;
+	background-color: var(--main-darkcolor);
+}
+.vertical {
+	text-align: center;
+	padding: 8px 0px;
+	font-size: 0.6em;
+}
+/****************************************************************************************************************
+**********************************************  MEDIA QUERIES  **************************************************
+*******************************************************************************************************************/
+@media only screen and (max-width: 800px) {
+	.vertical {
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		text-align: center;
+		line-height: 0.5px;
+		font-size: 0.5em;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.account-title {
+		font-size: 1.8em;
+		letter-spacing: 5px;
+		font-weight: bold;
+		padding-bottom: 30px;
+	}
+	.account-info-container-row {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 20px;
+	}
+	.account-info-container-col {
+		display: flex;
+		flex-direction: column;
+	}
+	.account-order-container-center {
+		margin-bottom: 30px;
+	}
+	.account-order {
+		padding: 20px;
+	}
+	.account-data {
+		line-height: 26px;
+		letter-spacing: 2px;
+		font-size: 1.2em;
+	}
+	.account-label {
+		padding-right: 20px;
+		letter-spacing: 2px;
+		color: var(--secondary-darkcolor);
+		line-height: 30px;
+		font-weight: 500;
+		font-size: 1em;
+	}
+	.account-edit-icon {
+		padding-right: 15px;
+	}
+	.account-edit {
+		letter-spacing: 2px;
+		margin: 30px 0px;
+	}
+	.account-edit:hover {
+		color: var(--secondary-lightcolor);
+		cursor: pointer;
+	}
+	.order-title {
+		color: var(--secondary-darkcolor);
+		font-size: 1.9em;
+		font-family: "DancingScript";
+		letter-spacing: 2px;
+		margin-top: 30px;
+	}
+	.grid-order {
+		display: grid;
+		grid-template-columns: 10% 10% 10% 10% auto 10% 10%;
+		grid-template-rows: auto;
+
+		padding: 10px 0px;
+		padding-top: 40px;
+	}
+	.grid-order-item {
+		text-align: center;
+		font-weight: 200;
+		font-size: 0.5em;
+		text-overflow: ellipsis;
+		border: 1px solid var(--secondary-darkcolor);
+		padding: 8px 2px;
+	}
+	.grid-order-item-label {
+		color: var(--secondary-darkcolor);
+		text-align: center;
+		font-weight: 100;
+		font-size: 0.5em;
+		border: 1px solid var(--secondary-darkcolor);
+		padding: 8px 2px;
+	}
+	.no-order {
+		border: 1px solid var(--secondary-darkcolor);
+		padding: 10px;
+		margin: 10px;
+		font-size: 0.8em;
+	}
+	.vertical {
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		text-align: center;
+		line-height: 0.5px;
+		font-size: 0.1em;
+	}
+}

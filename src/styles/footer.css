@@ -1,0 +1,109 @@
+.footer {
+	background-color: var(--main-darkcolor);
+}
+.footer-legal-links {
+	color: var(--secondary-darkcolor);
+	text-decoration: none;
+	margin-left: 40px;
+	font-size: 0.66em;
+	letter-spacing: 2px;
+}
+.footer-legal-links:hover {
+	color: var(--secondary-lightcolor);
+}
+.footer-copyright-container {
+	display: flex;
+	justify-content: space-around;
+}
+.footer-copyright-icon {
+	margin-right: 10px;
+}
+.footer-copyright {
+	letter-spacing: 2px;
+	font-size: 0.66em;
+}
+.footer-last-row {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+	color: var(--secondary-darkcolor);
+}
+.footer-row-social {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0px;
+}
+.footer-social {
+	margin: 0px 14px;
+	font-size: 30px;
+	text-decoration: none;
+	color: var(--main-lightcolor);
+}
+.footer-social:hover {
+	cursor: pointer;
+	color: var(--secondary-lightcolor);
+}
+.footer-title {
+	display: flex;
+	justify-content: center;
+	font-size: 1.4em;
+	font-family: "WindSong-Medium";
+	letter-spacing: 4px;
+	padding: 20px 0px;
+	color: var(--secondary-lightcolor);
+}
+.footer-slogan {
+	text-align: center;
+	font-size: 1.8em;
+	font-family: "DancingScript";
+	letter-spacing: 4px;
+	padding: 20px 15px;
+	margin-bottom: 20px;
+	color: var(--secondary-darkcolor);
+	margin-top: 0;
+}
+.footer-slogan2 {
+	text-align: center;
+	font-size: 0.9em;
+	letter-spacing: 2px;
+	padding: 5px 10px;
+	margin-bottom: 40px;
+	font-weight: 200;
+	margin-top: 0;
+}
+/****************************************************************************************************************
+**********************************************  MEDIA QUERIES  **************************************************
+*******************************************************************************************************************/
+@media only screen and (max-width: 600px) {
+	.footer-legal-links {
+		margin-left: 20px;
+		font-size: 0.6em;
+		letter-spacing: 2px;
+	}
+	.footer-last-row {
+		padding-bottom: 10px;
+	}
+	.footer-row-social {
+		padding: 20px 0px;
+	}
+	.footer-social {
+		margin: 0px 14px;
+		font-size: 26px;
+	}
+	.footer-title {
+		font-size: 1.1em;
+		padding: 20px 10px;
+		text-align: center;
+	}
+	.footer-slogan {
+		text-align: center;
+		font-size: 1.3em;
+		letter-spacing: 4px;
+		padding: 10px 20px;
+		margin-bottom: 20px;
+	}
+	.footer-slogan2 {
+		font-size: 0.7em;
+		letter-spacing: 2px;
+	}
+}

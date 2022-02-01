@@ -1,0 +1,346 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-gap: 0.2%;
+	background-color: var(--main-darkcolor);
+	padding: 0%;
+	width: 99.5vw;
+}
+.grid-title {
+	text-decoration: none;
+	color: white;
+	font-weight: 800;
+	font-family: "DancingScript";
+	padding-top: 10px;
+	font-size: 40px;
+}
+.grid-item {
+	text-align: center;
+	height: 25vh;
+	opacity: 0.7;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: all 0.5s ease-in;
+}
+
+.grid-item:hover .grid-overlay,
+.grid-item-categorie:hover .grid-overlay {
+	display: inline-block;
+	transition: all 0.6s ease-out;
+}
+
+.grid-item:hover,
+.grid-item-categorie:hover {
+	opacity: 1;
+}
+.grid-overlay {
+	display: none;
+	font-size: 0.7em;
+	letter-spacing: 2.2px;
+	margin-top: 20px;
+	transition: all 0.6s ease-in;
+}
+.grid-view-more {
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 10px 20px;
+	background-color: rgba(198, 196, 196, 0.439);
+	color: white;
+	font-weight: 700;
+	transition: all 0.4s ease-in-out;
+}
+.grid-view-more:hover {
+	background-color: rgba(65, 64, 64, 0.439);
+	transition: all 0.4s ease-in-out;
+}
+.item1 {
+	/*New zealand*/
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.item2 {
+	/*Mountain*/
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	height: 50.6vh;
+	padding-bottom: -2px;
+}
+.item3 {
+	/*Lake*/
+	grid-column-start: 5;
+	grid-column-end: 7;
+}
+.item4 {
+	/*Africa*/
+}
+.item5 {
+	/*Australia*/
+}
+.item6 {
+	/*Ocean*/
+	grid-column-start: 5;
+	grid-column-end: 7;
+}
+.item7 {
+	/*Panoramic*/
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 3;
+	grid-row-end: 5;
+	height: 50.6vh;
+}
+.item8 {
+	/*Europe*/
+}
+.item9 {
+	/*Urban*/
+}
+.item10 {
+	/*Wildlife*/
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 5;
+	grid-row-end: 7;
+	height: 61vh;
+}
+.item11 {
+	/*Sunset*/
+	grid-column-start: 3;
+	grid-column-end: 5;
+	height: 30vh;
+}
+.item12 {
+	/*waterfall*/
+	grid-column-start: 5;
+	grid-column-end: 7;
+	height: 61vh;
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+.item13 {
+	/*B & W*/
+	/*waterfall*/
+	grid-column-start: 3;
+	grid-column-end: 5;
+	height: 30vh;
+}
+
+/*________________   GRID x4 ----- GALLERIES & THEMES PAGE   _______________________*/
+
+.grid-container-categorie {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 5px;
+	background-color: var(--main-darkcolor);
+	padding: 10px;
+	padding-top: 40px;
+}
+.grid-item-categorie {
+	text-align: center;
+	height: 40vh;
+	opacity: 0.6;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: all 0.5s ease-in;
+}
+.item-themes1 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.item-themes2 {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	height: 80.6vh;
+}
+.item-themes3 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.item-themes4 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+.item-themes5 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 5;
+	height: 80.6vh;
+}
+.item-themes6 {
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+.item-themes7 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+.item-themes8 {
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+/* GALERIES PAGE GRID*/
+
+.item-galleries1 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.item-galleries2 {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	height: 80.6vh;
+}
+.item-galleries3 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.item-galleries4 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+.item-galleries5 {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	height: 40vh;
+}
+/****************************************************************************************************************
+**********************************************  MEDIA QUERIES  **************************************************
+*******************************************************************************************************************/
+@media only screen and (max-width: 600px) {
+	.grid-container {
+		display: grid;
+		justify-content: center;
+		grid-template-columns: auto auto auto auto auto auto;
+		grid-gap: 0.2%;
+		background-color: var(--main-darkcolor);
+		padding: auto;
+		margin: auto;
+		max-width: 100vw;
+	}
+	.grid-title {
+		color: white;
+		font-weight: 200;
+		padding: 6px;
+		font-size: 26px;
+	}
+	.grid-item {
+		text-align: center;
+		height: 25vh;
+		opacity: 0.7;
+		border-radius: 5px;
+		text-decoration: none;
+		transition: all 0.5s ease-in;
+		margin: 0;
+		padding: 0;
+	}
+
+	.grid-item:hover .grid-overlay,
+	.grid-item-categorie:hover .grid-overlay {
+		display: none;
+	}
+	.item1 {
+		/*New zealand*/
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	.item2 {
+		/*Mountain*/
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		height: 50.4vh;
+		width: 25vh;
+	}
+	.item3 {
+		/*Lake*/
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+	.item4 {
+		/*Africa*/
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+	.item5 {
+		/*Australia*/
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+	.item6 {
+		/*Ocean*/
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+	.item7 {
+		/*Panoramic*/
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 4;
+		grid-row-end: 5;
+	}
+	.item8 {
+		/*Europe*/
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 5;
+		grid-row-end: 6;
+	}
+	.item9 {
+		/*Urban*/
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 5;
+		grid-row-end: 6;
+	}
+	.item10 {
+		/*Wildlife*/
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 5;
+		grid-row-end: 6;
+	}
+	.item11 {
+		/*Sunset*/
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 6;
+		grid-row-end: 7;
+	}
+	.item12 {
+		/*waterfall*/
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 6;
+		grid-row-end: 8;
+		height: 50.4vh;
+	}
+	.item13 {
+		/*B & W*/
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 7;
+		grid-row-end: 8;
+	}
+	/*________________   GRID x4 ----- GALLERIES & THEMES PAGE   _______________________*/
+	.grid-container-categorie {
+		display: flex;
+		flex-direction: column;
+	}
+}
