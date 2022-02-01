@@ -47,7 +47,9 @@
 	display: flex;
 	justify-content: center;
 	font-size: 1.4em;
-	font-family: "WindSong-Medium";
+
+	font-family: "WindSong", cursive;
+	font-weight: 500;
 	letter-spacing: 4px;
 	padding: 20px 0px;
 	color: var(--secondary-lightcolor);
@@ -55,7 +57,7 @@
 .footer-slogan {
 	text-align: center;
 	font-size: 1.8em;
-	font-family: "DancingScript";
+	font-family: "Dancing Script", cursive;
 	letter-spacing: 4px;
 	padding: 20px 15px;
 	margin-bottom: 20px;

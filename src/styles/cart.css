@@ -112,7 +112,7 @@
 	padding: 14px 20px;
 	color: white;
 	font-size: 1.1em;
-	font-family: "DancingScript";
+	font-family: "Dancing Script", cursive;
 	letter-spacing: 3px;
 	margin: 20px;
 	font-weight: bold;
@@ -186,7 +186,7 @@
 		text-decoration: none;
 		color: var(--secondary-lightcolor);
 		font-size: 1.6em;
-		font-family: "DancingScript";
+		font-family: "Dancing Script", cursive;
 		letter-spacing: 3.5px;
 		text-align: center;
 		margin-bottom: 30px;

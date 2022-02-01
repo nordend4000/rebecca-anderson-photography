@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import "../styles/sidebar.css"
 import { HiChevronDown } from "react-icons/hi"
@@ -7,11 +7,10 @@ import { motion } from "framer-motion"
 import DATA_GALLERIES from "../ressources/data_galleries"
 import DATA_THEMES from "../ressources/data_themes"
 
-function Sidebar({ openSidebar, setOpenSidebar, login, width }) {
+function Sidebar({ setOpenSidebar, login, width }) {
 	const [openSubGalleries, setOpenSubGalleries] = useState(false)
 	const [openSubThemes, setOpenSubThemes] = useState(false)
 	const [openSubAccount, setOpenSubAccount] = useState(true)
-
 	const [firstRender, setFirstRender] = useState(true)
 
 	// VARIANTS CHILDRENS MENU

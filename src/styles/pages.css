@@ -81,7 +81,7 @@
 .home-title {
 	color: var(--main-lightcolor);
 	font-size: 2.2em;
-	font-family: "DancingScript";
+	font-family: "Dancing Script", cursive;
 	letter-spacing: 5px;
 	font-weight: bold;
 	border: 2px solid var(--main-lightcolor);
@@ -172,14 +172,14 @@
 .categorie-product-name {
 	color: white;
 	font-size: 1.7em;
-	font-family: "DancingScript";
+	font-family: "Dancing Script", cursive;
 	text-align: center;
 	margin: 20px 20px;
 }
 .categorie-title {
 	color: var(--secondary-lightcolor);
 	font-size: 2.2em;
-	font-family: "DancingScript";
+	font-family: "Dancing Script", cursive;
 	letter-spacing: 5px;
 	font-weight: bold;
 	padding-bottom: 40px;
@@ -302,7 +302,7 @@
 .login-title {
 	color: var(--secondary-lightcolor);
 	font-size: 2.2em;
-	font-family: "DancingScript";
+	font-family: "Dancing Script", cursive;
 	letter-spacing: 5px;
 	font-weight: bold;
 	border: 2px solid var(--secondary-lightcolor);
@@ -332,7 +332,7 @@
 	font-size: 1.1em;
 	font-weight: bold;
 	letter-spacing: 1.8px;
-	font-family: "DancingScript";
+	font-family: "Dancing Script", cursive;
 }
 .login-btn:hover {
 	cursor: pointer;
@@ -485,7 +485,7 @@
 	text-align: left;
 	color: var(--secondary-lightcolor);
 	font-size: 2.2em;
-	font-family: "DancingScript";
+	font-family: "Dancing Script", cursive;
 	letter-spacing: 5px;
 	font-weight: bold;
 	padding-top: 35px;
@@ -703,7 +703,6 @@
 		background-color: var(--main-darkcolor);
 		display: flex;
 		flex-direction: column;
-
 		justify-content: center;
 		padding: 20px;
 	}

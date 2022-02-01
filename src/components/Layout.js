@@ -182,7 +182,6 @@ function Layout({ children }) {
 			)}
 			{openSidebar && (
 				<Sidebar
-					openSidebar={openSidebar}
 					setOpenSidebar={setOpenSidebar}
 					login={login}
 					width={widthSidebar}

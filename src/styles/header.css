@@ -28,13 +28,15 @@ header {
 }
 .header-name {
 	font-size: 2.6em;
-	font-family: "WindSong-Medium";
+	font-family: "WindSong", cursive;
+	font-weight: 500;
 	letter-spacing: 4px;
 	text-align: center;
 }
 .header-subtitle {
 	font-size: 0.6em;
-	font-family: "WindSong-Regular";
+	font-family: "WindSong", cursive;
+	font-weight: 400;
 	margin-left: 30px;
 	letter-spacing: 4px;
 }

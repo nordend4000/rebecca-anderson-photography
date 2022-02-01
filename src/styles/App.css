@@ -1,15 +1,5 @@
-@font-face {
-	font-family: "DancingScript";
-	src: url("../ressources/DancingScript-VariableFont_wght.ttf");
-}
-@font-face {
-	font-family: "WindSong-Medium";
-	src: url("../ressources/WindSong-Medium.ttf");
-}
-@font-face {
-	font-family: "WindSong-Regular";
-	src: url("../ressources/WindSong-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=WindSong:wght@400;500&display=swap");
+
 :root {
 	--main-darkcolor: rgb(32, 32, 32);
 	--main-lightcolor: rgb(177, 175, 165);
@@ -119,7 +109,7 @@ body,
 }
 .text-anim {
 	font-size: 3.5em;
-	font-family: "DancingScript";
+	font-family: "Dancing Script", cursive;
 	letter-spacing: 5px;
 }
 /****************************************************************************************************************
