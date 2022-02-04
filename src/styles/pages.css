@@ -25,6 +25,10 @@
 	border-radius: 2px;
 	padding-bottom: 40px;
 }
+.grab {
+	margin-top: 2%;
+	margin-bottom: -4%;
+}
 .grab:hover {
 	cursor: grab;
 }
@@ -91,6 +95,7 @@
 	text-decoration: none;
 	transition: all 0.7s ease-out;
 	text-align: center;
+	margin: 5% 0px;
 }
 .home-title:hover {
 	color: white;

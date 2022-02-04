@@ -5,7 +5,14 @@ import "../styles/modal.css"
 import { AiFillCloseCircle } from "react-icons/ai"
 import { FiEdit3 } from "react-icons/fi"
 
-function EditProfilModal({ onClose, setMessage, setError, id, userData }) {
+function EditProfilModal({
+	onClose,
+	setMessage,
+	setError,
+	id,
+	userData,
+	setRenderHeader,
+}) {
 	const [firstName, setFirstName] = useState("")
 	const [lastName, setLastName] = useState("")
 	const [email, setEmail] = useState("")
@@ -49,7 +56,14 @@ function EditProfilModal({ onClose, setMessage, setError, id, userData }) {
 			url: `${process.env.REACT_APP_SERVER_URL}/edit-user`,
 		}).then(res => {
 			if (res.data === "update profile ok") {
+				setRenderHeader(true)
 				setMessage("Your personal details have been successfuly updated.")
+				onClose()
+			}
+			if (res.data === "error : update personal data") {
+				setMessage(
+					"Ooops, something wrong happened, try again to update your personal data.",
+				)
 				onClose()
 			}
 		})

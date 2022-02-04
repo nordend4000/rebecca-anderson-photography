@@ -16,6 +16,7 @@ import Layout from "../components/Layout"
 import { Page } from "../ressources/variants"
 
 function MyAccount() {
+	const [renderHeader, setRenderHeader] = useState(false)
 	const [login, setLogin] = useState(false)
 	const [message, setMessage] = useState("")
 	const [error, setError] = useState("")
@@ -69,7 +70,7 @@ function MyAccount() {
 
 	return (
 		<motion.div initial='initial' animate='animate' exit='exit' variants={Page}>
-			<Layout>
+			<Layout renderHeader={renderHeader}>
 				<Helmet>
 					<title>Rebecca Anderson Photography - My Account</title>
 					<meta
@@ -91,6 +92,7 @@ function MyAccount() {
 							setMessage={setMessage}
 							setError={setError}
 							id={id}
+							setRenderHeader={setRenderHeader}
 						/>
 					)}
 					<div className='page-line'></div>

@@ -16,10 +16,8 @@
 
 .slick-list {
 	position: relative;
-
 	display: block;
 	overflow: hidden;
-
 	margin: 0;
 	padding: 0;
 }
@@ -44,7 +42,6 @@
 	position: relative;
 	top: 0;
 	left: 0;
-
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -52,7 +49,6 @@
 .slick-track:before,
 .slick-track:after {
 	display: table;
-
 	content: "";
 }
 .slick-track:after {
@@ -89,9 +85,7 @@
 }
 .slick-vertical .slick-slide {
 	display: block;
-
 	height: auto;
-
 	border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
@@ -111,7 +105,7 @@
 	left: 20px;
 	color: var(--main-lightcolor);
 	font-size: 2em;
-	z-index: 100;
+	z-index: 40;
 }
 .chevron-slider-right {
 	position: absolute;
@@ -119,7 +113,7 @@
 	right: 20px;
 	color: var(--main-lightcolor);
 	font-size: 2em;
-	z-index: 100;
+	z-index: 40;
 }
 .chevron-slider-left:hover {
 	color: var(--secondary-lightcolor);

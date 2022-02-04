@@ -22,6 +22,7 @@ const textContainer = {
 	},
 	animate: {
 		opacity: 0,
+		height: 0,
 		transition: {
 			duration: 0.25,
 			when: "afterChildren",

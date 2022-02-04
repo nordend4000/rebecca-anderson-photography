@@ -9,7 +9,7 @@ import Footer from "../components/Footer"
 import CartModal from "./CartModal"
 import CookieConsent from "../components/CookieConsent"
 
-function Layout({ children }) {
+function Layout({ children, renderHeader }) {
 	const [openSidebar, setOpenSidebar] = useState(false)
 	const [openCart, setOpenCart] = useState(false)
 	const [openCartModal, setOpenCartModal] = useState(false)
@@ -92,7 +92,7 @@ function Layout({ children }) {
 			setLogin(true)
 			setId(JSON.parse(sessionLogin))
 		}
-	}, [renderLogin, hideCookieConsent])
+	}, [renderLogin, hideCookieConsent, renderHeader])
 	// ---------------------------------  get UserData ------------------------------------------------------
 	useEffect(() => {
 		if (id === "") return
@@ -103,7 +103,7 @@ function Layout({ children }) {
 			.catch(res => {
 				console.error(res)
 			})
-	}, [login, id])
+	}, [login, id, renderHeader])
 	// ---------------------------------  handle Width & resize ------------------------------------------------------
 	useEffect(() => {
 		setWidthSidebar(getWidth().sidebarWidth)
