@@ -2,7 +2,7 @@
 
 High Quality Print & Digital e-commerce Website
 
-## https//:rebecca-anderson-photography.netlify.app
+## https://rebecca-anderson-photography.netlify.app
 
 Front End :
 
